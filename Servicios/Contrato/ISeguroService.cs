@@ -5,9 +5,9 @@ namespace BackendConsultorio.Servicios.Contrato
     public interface ISeguroService
     {
         Task<List<Seguro>> GetListSeguros();
-        Task<Seguro> GetSeguroById(int idSeguro);
-        Task<Seguro> CreateSeguro(Seguro seguro);
-        Task<Seguro> UpdateSeguro(Seguro seguro, int idSeguro);
-        Task<Seguro> DeleteSeguro(int id);
+        Task<Seguro> GetSeguro(int idSeguro);
+        Task<Seguro> SaveSeguro(Seguro seguro);
+        Task<bool> UpdateSeguro(Seguro seguro);
+        Task<bool> DeleteSeguro(int idSeguro);
     }
 }
